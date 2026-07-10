@@ -1,8 +1,8 @@
-# Kimi Analysis
+# Video Analysis
 
-Most AI video analysis stops at the transcript. This CLI gives Kimi the MP4 and turns the visuals into timestamped scene data.
+Kimi has this super convenient API feature where you upload an MP4, then pass it straight back to the model as video input. It looks at the frames and gives you timestamped scene data.
 
-Kimi handles the frames. You can add a local Whisper transcript for the audio.
+This CLI is the small wrapper around that. Add Whisper if you want a local audio transcript too.
 
 ## Setup
 
