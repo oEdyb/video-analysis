@@ -1,0 +1,39 @@
+[project]
+name = "kimi-analysis"
+version = "0.1.0"
+description = "Lean Kimi video scene extraction CLI"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "openai==2.8.1",
+]
+
+[project.optional-dependencies]
+transcribe = [
+    "faster-whisper==1.2.1",
+]
+
+[project.scripts]
+kimi-analysis = "kimi_analysis:main"
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff==0.14.8",
+]
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kimi_analysis"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

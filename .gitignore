@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+.ruff_cache/
+out/
+*.mp4
+*.mov
+*.webm
