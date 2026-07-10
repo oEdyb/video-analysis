@@ -1,6 +1,6 @@
 # Video Analysis
 
-Kimi has this super convenient API feature where you upload an MP4, then pass it straight back to the model as video input. It looks at the frames and gives you timestamped scene data.
+Kimi has this super convenient API feature where you can, alongside your text prompt, upload an MP4, and pass it straight to the model as video input. It can look at the frames and gives you timestamped scene data.
 
 This CLI is the small wrapper around that. Add Whisper if you want a local audio transcript too.
 
